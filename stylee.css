@@ -136,7 +136,7 @@ body {
   background-color: #f2c434;
   padding: 2vh 1.5vw;
 }
-.btn > button ,.page2 > .bottom>.right>button,.page3>.bottom>.center>button{
+.btn > button ,.page2 > .bottom>.right>button,.page3>.bottom>.center>button,.page4>.bottom>.card1>button,.card2>button,.card3>button, .page5_2>.blog>.card1>button{
   padding: 16px 45px;
   background-color: transparent;
   color: aliceblue;
@@ -144,6 +144,12 @@ body {
   border-radius: 25px;
   font-size: 2.5vh;
 }
+/* #btn{  padding: 16px 45px;
+  background-color: transparent;
+  color: aliceblue;
+  border: 2px solid white;
+  border-radius: 25px;
+  font-size: 2.5vh;} */
 .page2 {
   width: 100vw;
   display: flex;
@@ -214,34 +220,35 @@ body {
 .page2 > .bottom {
   width: 100vw;
   height: 100vh;
- 
-  height: 100vh;
-  
+  padding: 100px;
 
-  display: flex;
-  justify-content: space-evenly;
- 
 }
 .page2 > .bottom>.left{
-  width: 50%;
+  width: 100%;
   height: 100%;
 background-image: url(./img/bottle-women-perfume-and-space-for-text-2022-02-28-22-16-40-utc.jpg);
-opacity: .5;
+/* opacity: .5; */
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+ 
 
 }
-.page2 > .bottom>.right{
+.page2 > .bottom .right{
   width: 50%;
    display: flex;
    background-color:
-   #323233;
+   #32323356;
   justify-content: center;
   flex-direction: column;
   text-align: left;
   padding: 8vw;
   gap: 2vh;
-  margin-right: 8vw;
+  color: white;
+ 
+
   
 
 }
@@ -268,7 +275,7 @@ opacity: .5;
   height: 100%;
   width: 100vw;
 }
-.page3>.upper{
+.page3>.upper,.page4>.upper,.page5_2>.upper{
 display: flex;
 flex-direction: column;
 align-items:center;
@@ -278,14 +285,14 @@ gap: 2vh;
 }
 
 
-.page3>.upper>h1{
+.page3>.upper>h1,.page4>.upper>h1,.page5>.left>h1,.page5_2>.upper>h1{
 color: transparent;
   font-size: 10vh;
   -webkit-text-stroke-color: #eafa07;
   -webkit-text-stroke-width: .5px;
 }
 
-.page3>.upper>h2{
+.page3>.upper>h2,.page4>.upper>h2,.page5>.left>h2,.page5_2>.upper>h2{
   color: white;
   font-size: 7vh;
 }
@@ -333,39 +340,250 @@ color: transparent;
 
 .page3>.bottom>.right{
 background-image: url(./img/dried-orange-slices-2021-08-29-16-57-46-utc.jpg);
-opacity: .5;
+/* opacity: .5; */
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 height: 100%;width: 30%;
 border-bottom-right-radius: 25%;
-display: flex;
+
+
+
+
+}
+
+.page3>.bottom>.right>.content{
+  height: 100%;
+  width: 100%;
+  background-color: #2524247e;
+  border-bottom-right-radius: 25%;
+  display: flex;
 flex-direction: column;
 justify-content: center;
 gap: 2vh;
 text-align: left;
-padding: 2vw;
-
+padding-left: 2vw;
 }
 
-.page3>.bottom>.right>h3{
+.page3>.bottom>.right>.content>h3{
   color: white;
   font-size: 4vh;
 
 }
-.page3>.bottom>.right>p{
+.page3>.bottom>.right>.content>p{
   font-size: 3vh;
   color: white;
+  width: 70%;
 }
-.page3>.bottom>.right>ul{
-  list-style: none;
+.page3>.bottom>.right>.content>ul{
+  list-style: square;
   display: flex;
   flex-direction: column;
   gap: 2vh;
   color: yellow;
+  padding: 1.6vw;
+
+}
+.page4{ 
+margin-top: 30vh;
+}
+.page4>.bottom{
+  width: 100vw;
+  height: 80vh;
+
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+.page4>.bottom>.card1,.card2,.card3{
+  height: 98%;
+  width: 27%;
+  background-color: 
+  #2f2f30;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 50%; */
+  border-radius: 100px 100px 100px 100px;
+  gap: 2.5vh;
+  color: white;
+}
+.page4>.bottom>.card1>button,.card2>button,.card3>button{
+padding: 2vh 1.3vw;
+width: 50%;
+}
+.page4>.bottom>.card1>p,.card2>p,.card3>p{
+  width: 55%;
+  text-align: center;
 
 }
 
 
+.page4>.bottom>.card1>img,.card2>img,.card3>img{
+height: 40vh;
+width: 30vh;
+}
+
+.page5{
+  width: 100vw;
+  height: 80%;
+  background-color: #07f2fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/img/black-bottle-of-eau-de-toilette-or-perfume-with-ta-2022-10-25-10-08-01-utc.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 2vw;
+  margin-top: 10vh;
+  /* opacity: .5; */
+}
+
+.page5>.left{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  height: 40vh;
+  gap: 2vh;
+  width: 35%;
+ 
+}
+.page5>.right{
+  width: 50%;
+  height: 40vh;
+  background-color: brown;
+  border-radius: 0px 25% 0px 25%;
+  margin: 20px;
+}
+
+.page5_2{
+  height: 100vh;
+  width: 100vw;
+ 
+}
+.page5_2 .blog{
+  width: 100%;
+  display: flex; 
+  align-items: center;
+  justify-content:center;
+  margin-left: 7vh;
+ 
+}
+.page5_2>.blog>.card1{
+  height: 98%;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+ align-items: left;
+  gap: 2vh;
+  flex-direction: column;
+  color: white;
+ 
+
+}
+.page5_2>.blog>.card1>img{
+  width: 80%;
+  height: 100%;
+
+}
+.page5_2>.blog>.card1>h3{
+  color: #faba0a;
+}
+.page5_2>.blog>.card1>p{
+  width: 75%;
+}
+.page5_2>.blog>.card1>button{
+  width: 45%;
+}
+.page6{
+  margin-top: 50vh;
+  height: 60%;width: 100%;
+  background-image: url(./img/modern-wedding-bouquet-perfume-bottle-and-gift-b-2022-02-02-03-56-17-utc.jpg);
+background-size: cover;
+
+}
+.page6>.upper{
+  height:60vh;
+  background:
+  #353536e7;
+}
+.page6>.upper>.left img{
+  height: 15vh;
+}
+
+.page6>.upper>.left{
+
+height: 100%;
+width: 100%;
+display: flex;
+justify-content:space-evenly;
+
+gap: 1vw;
+
+padding: 10vh;
+}
+.page6>.upper>.left>ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+
+}
+.page6>.upper>.left>ul>li>p{
+  width: 17vw;
+  font-size: 2.7vh;
+  color: 
+  #9c9999 ;
+}
+
+.page6>.upper>.left>.list1>ul{
+  list-style: none;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ gap: 1vh;
+ color: 
+ #9c9999 ;
+ font-weight: 600;
+ font-size: 2.5vh;
+ 
 
 
+
+}
+.page6>.upper>.left>.list1>ul>li:first-child{
+  margin:3vh 0vw;
+  font-size: 3vh;
+  font-weight: 900;
+  color: white;
+
+}
+
+.contact-details{
+  margin-top: -20vh;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  gap: 1vw;
+  color: #e0e0e0;
+  list-style: none;
+  font-weight: bold;
+  font-size: 3.5vh;
+  padding-left: 2vw;
+}
+
+.line{
+  width:85%;
+  height: .5px;
+  background-color: #9da804;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-left: 10vw;
+  margin-top: 9vh;
+
+}
