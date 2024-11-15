@@ -49,8 +49,15 @@ body {
 .hero > nav > div > ul > li {
   color: #f2c434;
 }
+.hamburge{
+  display: none;
+}
+
+
+
 .hero > .content {
   height: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,9 +93,7 @@ body {
   width: 20%;
   border: 0.1px solid rgb(121, 121, 56);
   padding: 2vh;
-
   margin-top: -9vh;
-
   border-top-left-radius: 25%;
   border-bottom-right-radius: 25%;
 }
@@ -453,15 +458,16 @@ body {
   justify-content: center;
   height: 40vh;
   gap: 2vh;
+  background-color: rgba(128, 128, 128, 0.699);
   width: 35%;
 }
-.page5 > .right {
+/* .page5 > .right {
   width: 50%;
   height: 40vh;
   background-color: rgba(128, 128, 128, 0.219);
   border-radius: 0px 25% 0px 25%;
   margin: 20px;
-}
+} */
 
 .page5_2 {
   height: 100vh;
@@ -517,9 +523,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-
   gap: 1vw;
-
   padding: 10vh;
 }
 .page6 > .upper > .left > ul {
@@ -573,4 +577,249 @@ body {
   justify-items: center;
   margin-left: 10vw;
   margin-top: 9vh;
+}
+
+
+@media (max-width: 600px){
+  .hero > nav {
+    width: 100%;
+    padding-top: 4vh;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .hero > nav > div > ul {
+    list-style: none;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 3.5vh;
+    gap: 5vw;
+  }
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: white;
+}
+  .hamburge{
+    display: initial;
+  }
+  .hero > .content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      width: 100vw;
+  }
+
+  .hero > .content > .img2 {
+    height: 75%;
+    width: 80%; 
+    margin-top: 20vh;
+   
+  }
+ 
+  .hero>.content>.img1,
+  .hero>.content>.img3{
+    display:none;
+  }
+
+  .overlap {
+    position: absolute;
+    height: 100vh;
+   margin-top: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    /* background-color: #e0e0e0;
+      opacity: .5; */
+  }
+  .overlap>h3 {
+   
+    color: #ffffff;
+    font-size: 10vh;
+   text-align: center;
+    width: 100vw;
+
+  }
+
+  .page2 > .upper {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4vw;
+    padding: 5vh 0vw;  
+    margin: 25vh 0vw;
+  }
+  .page2 > .upper > .left {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 1vh 2.8vw;
+  }
+  
+  
+  .upper > .left > p {
+  
+    text-align: center;
+  }
+  
+  .upper > .center {
+    width: 70%;
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.3vw;
+    gap: 2vh;
+    text-align: center;
+  
+  }
+  .upper > .right {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;   
+    text-align: center;
+    
+  }
+
+  .page2 > .bottom .right {
+    width: 100%;
+    display: flex;
+    background-color: #32323356;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    padding: 8vw;
+    gap: 2vh;
+    color: white;
+  }
+
+
+  
+.page3 > .bottom {
+
+  display: flex;
+ 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3vw;
+  
+}
+.page3 > .bottom > .left {
+display: none;
+  
+}
+.page3 > .bottom > .center {
+  height: 50%;
+  width: 90%;
+ 
+}
+
+.page3 > .bottom > .right {
+ 
+  
+  height: 50%;
+  width: 90%;
+padding: 10PX;
+}
+
+.page3 > .bottom > .right > .content {
+  height: 100%;
+  width: 100%;
+  background-color: #2524247e;
+  border-bottom-right-radius: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vh;
+  text-align: left;
+  padding-left: 2vw;
+}
+
+.page3 > .bottom > .right > .content > h3 {
+  color: white;
+  font-size: 4vh;
+}
+.page3 > .bottom > .right > .content > p {
+  font-size: 3vh;
+  color: white;
+  width: 70%;
+}
+.page3 > .bottom > .right > .content > ul {
+  list-style: square;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.page4 > .bottom { 
+  height: 220vh;
+  flex-direction: column;
+ 
+}
+.page4 > .bottom > .card1,
+.card2,
+.card3 {
+    width: 50%;
+ 
+}
+.page5 > .left {
+ 
+  width: 65%;
+}
+.page5_2{
+  height: 350vh;
+  
+}
+
+.page5_2 > .blog > .card1 {
+  height: 98%;
+  width: 60%;
+
+}
+.page5_2 .blog {
+  
+  gap: 10vh;
+ flex-direction: column;
+}
+.page6 > .upper > .left {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1vw;
+  padding: 10vh;
+}
+
+.page6 {
+  margin-top: 50vh;
+  height: 90%;
+  width: 100%;
+  background-image: url(./img/modern-wedding-bouquet-perfume-bottle-and-gift-b-2022-02-02-03-56-17-utc.jpg);
+  background-size: cover;
+}
+.page6 > .upper {
+  height: 80vh;
+  background: #353536e7;
+}
+
+
 }
