@@ -588,7 +588,6 @@ body {
     display: flex;
     justify-content: space-around;
   }
-}
 
   .hero > nav > div > ul {
     list-style: none;
@@ -795,12 +794,18 @@ padding: 10px;
   width: 100%;
 }
 .page5_2{
-
+  height: 350vh;
   display: none;
 }
 
 
+.page5_2  .blog {
+  background: #cb2828;
+  gap: 10vh;
+ flex-direction: column;
 
+
+}
 
 
 
@@ -849,7 +854,8 @@ padding: 10px;
 }
 
 .page6 > .upper > .left ul li a:hover {
-  color: #ffd700; 
+  color: #ffd700; }
+
 .details {
   color: white;
   display: flex;
@@ -875,8 +881,8 @@ padding: 10px;
   background: #ffd700;
   margin-top: 20px;
 }
-}
 
+}
 @media (max-width: 1024px) {
   .page6 > .upper {
     height: auto;
