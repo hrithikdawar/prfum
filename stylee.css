@@ -588,6 +588,7 @@ body {
     display: flex;
     justify-content: space-around;
   }
+}
 
   .hero > nav > div > ul {
     list-style: none;
@@ -613,12 +614,14 @@ body {
     justify-content: center;
     align-items: center;
       width: 100vw;
+      margin-left: 20px;
   }
 
   .hero > .content > .img2 {
     height: 75%;
     width: 80%; 
     margin-top: 20vh;
+   
    
   }
  
@@ -628,22 +631,22 @@ body {
   }
 
   .overlap {
-    position: absolute;
-    height: 100vh;
+   
+   
    margin-top: 30vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-left: 20px;
     
-    /* background-color: #e0e0e0;
-      opacity: .5; */
+   
   }
   .overlap>h3 {
    
     color: #ffffff;
-    font-size: 10vh;
+    font-size: 8vh;
    text-align: center;
     width: 100vw;
 
@@ -655,7 +658,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2.4vw;
+    gap: 8vw;
     padding: 5vh 0vw;  
     margin: 25vh 0vw;
   }
@@ -677,8 +680,7 @@ body {
   }
   
   .upper > .center {
-    width: 70%;
-   
+    width: 70%;   
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -710,13 +712,18 @@ body {
     gap: 2vh;
     color: white;
   }
+  .page2>.bottom>.left{
+  
+    width: 80vw;
+    margin-left: -10vw;
+   
+  }
 
 
   
 .page3 > .bottom {
 
-  display: flex;
- 
+  display: flex; 
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -728,17 +735,16 @@ display: none;
   
 }
 .page3 > .bottom > .center {
-  height: 50%;
+  
   width: 90%;
  
 }
 
-.page3 > .bottom > .right {
- 
+.page3 > .bottom > .right { 
   
-  height: 50%;
+ 
   width: 90%;
-padding: 10PX;
+padding: 10px;
 }
 
 .page3 > .bottom > .right > .content {
@@ -773,53 +779,170 @@ padding: 10PX;
   height: 220vh;
   flex-direction: column;
  
+ 
 }
 .page4 > .bottom > .card1,
 .card2,
 .card3 {
-    width: 50%;
+    width: 80%;
+    margin-left: 6vw;
  
 }
-.page5 > .left {
- 
-  width: 65%;
+.page5{
+  width: 100%;
+}
+.page5 > .left { 
+  width: 100%;
 }
 .page5_2{
-  height: 350vh;
-  
+
+  display: none;
 }
 
-.page5_2 > .blog > .card1 {
-  height: 98%;
-  width: 60%;
 
-}
-.page5_2 .blog {
-  
-  gap: 10vh;
- flex-direction: column;
-}
-.page6 > .upper > .left {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 1vw;
-  padding: 10vh;
-}
+
+
+
 
 .page6 {
   margin-top: 50vh;
-  height: 90%;
   width: 100%;
   background-image: url(./img/modern-wedding-bouquet-perfume-bottle-and-gift-b-2022-02-02-03-56-17-utc.jpg);
   background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
+
 .page6 > .upper {
   height: 80vh;
-  background: #353536e7;
+  background: rgba(53, 53, 54, 0.91); 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+  justify-content: space-around;
+  padding: 20px;
 }
 
 
+.page6 > .upper > .left {
+  width: 100%;
+  max-width: 1200px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
 }
+
+.page6 > .upper > .left ul {
+  list-style: none;
+}
+
+.page6 > .upper > .left ul li {
+  margin-bottom: 10px;
+}
+
+.page6 > .upper > .left ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.page6 > .upper > .left ul li a:hover {
+  color: #ffd700; 
+.details {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-details {
+  list-style: none;
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+.contact-details li {
+  margin: 10px 0;
+}
+
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #ffd700;
+  margin-top: 20px;
+}
+}
+
+@media (max-width: 1024px) {
+  .page6 > .upper {
+    height: auto;
+  }
+
+  .page6 > .upper > .left {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page6 > .upper > .left ul li {
+    text-align: center;
+  }
+
+  .details {
+    text-align: center;
+  }
+
+  .details .contact-details li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .page6 {
+    margin-top: 30vh;
+  }
+
+  .page6 > .upper > .left {
+    padding: 10vh 5vw;
+    width: 100%;
+  }
+
+  .contact-details {
+    font-size: 0.9rem;
+  }
+
+  .line {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page6 > .upper {
+    height: auto;
+    padding: 5vh 2vw;
+  }
+
+  .page6 > .upper > .left {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page6 > .upper > .left ul {
+    width: 100%;
+    text-align: center;
+  }
+  .page6 > .upper > .left ul li p{
+   width: 100%;
+  }
+  .contact-details {
+    font-size: 0.8rem;
+  }
+
+}
+
